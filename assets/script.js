@@ -21,14 +21,14 @@ function play() {
     if (count == 0) {
         count = 1;
         tocar.play()
-        playBtn.innerHTML = "  &nbsp;&#9654;"
+        playBtn.innerHTML = " ❚ ❚"
         playBtn.style.color ="white"
         playBtn.style.fontSize= "20pt"
 
     } else {
         count = 0;
         tocar.pause()
-        playBtn.innerHTML = " ❚ ❚"
+        playBtn.innerHTML = "   &nbsp;&#9654;"
         playBtn.style.color ="white"
         playBtn.style.fontSize= "19pt"
 
