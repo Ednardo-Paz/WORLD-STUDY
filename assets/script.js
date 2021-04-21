@@ -22,14 +22,15 @@ function play() {
         count = 1;
         tocar.play()
         playBtn.innerHTML = " ❚ ❚"
-        playBtn.style.color ="white"
+        playBtn.style.color ="#8e2170"
         playBtn.style.fontSize= "20pt"
+        
 
     } else {
         count = 0;
         tocar.pause()
         playBtn.innerHTML = "   &nbsp;&#9654;"
-        playBtn.style.color ="white"
+        playBtn.style.color ="#8e2170"
         playBtn.style.fontSize= "19pt"
 
     }
