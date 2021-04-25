@@ -11,6 +11,10 @@
     padding   : 0;
     list-style: none;
     box-sizing: border-box;
+   
+}
+a{
+    color: white;
 }
 
 html {
@@ -204,34 +208,37 @@ body .full-width {
 
 /* Section Metod*/
 
-.metod-content {
+.metod-content{
     display        : flex;
     flex-direction : row;
     justify-content: space-around;
-    padding-bottom : 8rem;
-
+    min-height     : auto;
+    padding-bottom : 5rem;
+   
 }
+
 
 .metod-video video {
-    width  : 100%;
-    display: block;
+    width        : 100%;
+    display      : block;
     border-radius: 1rem;
+    
 }
+
 
 .metod-video {
     width   : 496px;
     height  : 278px;
     position: relative;
-    
 }
+
 
 .metod-text-content {
     display       : flex;
     flex-direction: column;
     max-width     : 490px;
     color         : #0a1a35;
-    gap: 5rem;
-
+    gap           : 5rem;
 }
 
 .controle {
@@ -246,10 +253,10 @@ body .full-width {
 
 
 .play-btn {
-    outline   : none;
-    background: none;
-    border    : 3px solid #f63fed;
-    width     : 100%;
+    outline      : none;
+    background   : none;
+    border       : 3px solid #f63fed;
+    width        : 100%;
     border-radius: 1rem;
 }
 
@@ -259,7 +266,6 @@ body .full-width {
 ul.window-content,
 .box1 {
     position       : relative;
-    
     display        : flex;
     width          : 100%;
     max-width      : 120rem;
@@ -268,19 +274,24 @@ ul.window-content,
     flex-wrap      : wrap;
 }
 @keyframes move {
-    0% {top:0px}
-    100%{top: -110px}
+    0% {
+        top: 0px
+    }
+
+    100% {
+        top: -110px
+    }
 }
 ul.window-content,
 .box1 li {
-    position: relative;
-    animation: move;
-    animation-duration: 2s;
+    position           : relative;
+    animation          : move;
+    animation-duration : 2s;
     animation-fill-mode: forwards;
-    height          : 25rem;
-    background-color: #f63fed;
-    border-radius   : 1.5rem;
-    padding         : 2rem;
+    height             : 25rem;
+    background-color   : #f63fed;
+    border-radius      : 1.5rem;
+    padding            : 2rem;
 }
 
 ul.window-content,
@@ -308,7 +319,7 @@ ul.window-content,
     border       : 0.2rem solid white;
     border-radius: 50%;
     padding      : 0.8rem;
-    
+
 }
 
 
@@ -352,16 +363,21 @@ ul.window-content,
     flex  : 1 1 140px;
     margin: 0.2rem;
 }
+
 .gallery-img img {
     width  : 100%;
-    display: block; 
+    display: block;
 }
+
 .gallery-img img:hover {
     transform : scale(2.0);
     transition: all .3s ease-in-out;
 }
 
 /* Section depoimento*/
+.depoimento{
+    background-color: #7a9ed483;
+}
 
 .depoim-content h3 {
     text-align: center;
@@ -380,14 +396,16 @@ ul.depoim-content,
     gap            : 5rem;
 }
 
+
+
 ul.depoim-content,
 .box li {
-  
-    position: relative;
+
+    position        : relative;
     display         : flex;
     height          : auto;
     width           : 100%;
-    background-color: #f63fed;
+    background-color: #6d673281;
     border-radius   : 1rem;
     color           : white;
     padding         : 2rem;
@@ -397,8 +415,9 @@ ul.depoim-content,
 ul.depoim-content,
 .box>li {
     flex: 0 1 22rem;
-   
+
 }
+
 ul.depoim-content,
 .box li p {
     font-size  : 1.6rem;
@@ -408,11 +427,11 @@ ul.depoim-content,
 ul.depoim-content,
 .box li img {
     background-color: wheat;
-  border: 3px solid white;
-  border-radius: 50%;
-  padding: 1.5rem;
-  position: relative;
-  top: -6rem;
+    border          : 3px solid white;
+    border-radius   : 50%;
+    padding         : 1.5rem;
+    position        : relative;
+    top             : -6rem;
 }
 
 ul.depoim-content,
@@ -424,10 +443,10 @@ ul.depoim-content,
 /*section formulario*/
 
 .contact {
-    background:url(/assets/img/bg-contato.png)no-repeat;
+    background         : url(/assets/img/bg-contato.png)no-repeat;
     background-position: center;
-    background-size: cover;
-    opacity: .8;
+    background-size    : cover;
+    opacity            : .8;
 }
 
 .contact-content {
@@ -435,30 +454,33 @@ ul.depoim-content,
     grid-template-columns: 1fr 1fr;
     min-height           : 70vh;
     gap                  : 5rem;
-    color: white;
-    padding: 3rem;
-    background-color: #7885a378;
+    color                : white;
+    padding              : 3rem;
+    background-color     : #7885a378;
 }
-.contact-text{
-    display: flex;
-    flex-direction: column;
+
+.contact-text {
+    display        : flex;
+    flex-direction : column;
     justify-content: center;
-    gap: 4rem;
-    grid-column: 2 / 2 / 2 / 2;
+    gap            : 4rem;
+    grid-column    : 2 / 2 / 2 / 2;
 }
-.form-content{
-    border   : none;
-    width    : 100%;
-    display  : flex;
-    flex-wrap: wrap;
-    gap      : 3rem;
-    padding: 2rem;
+
+.form-content {
+    border       : none;
+    width        : 100%;
+    display      : flex;
+    flex-wrap    : wrap;
+    gap          : 3rem;
+    padding      : 2rem;
     border-radius: 1rem;
-    
+
 }
+
 .form-group {
     flex: 1 1 22rem;
-    
+
 }
 
 .form-group label {
@@ -473,9 +495,9 @@ ul.depoim-content,
 }
 
 .form-group button {
-    border    : 0.3rem solid white;
+    border    : 0.3rem solid rgb(255, 255, 255);
     background: none;
-    color     : white;
+    color     : #ffffff;
     padding   : 1.5rem 2rem;
     font-size : 2rem;
     cursor    : pointer;
@@ -483,13 +505,41 @@ ul.depoim-content,
 }
 
 .form-group button:hover {
-    background: white;
+    background: #ffffff;
     color     : #315fa5;
 }
 
 .form-group ::placeholder {
     opacity: .4;
 }
+/*Footer rodape*/
+
+.rodape-content{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 6.5rem;
+    padding-bottom: 6.5rem;
+    gap: 3rem;
+}
+.rodape p{
+    font-size: 1.1rem;
+  
+}
+
+.icon-content, .icon{
+    display: flex;
+    gap: 2rem;
+}
+ .icon{
+    border: 2px solid white;
+    padding: .6rem;
+    border-radius:50%;
+}
+
+
 
 @media(max-width:1190px) {
     .contact {
@@ -548,15 +598,16 @@ ul.depoim-content,
         flex-direction: column;
         align-items   : center;
         text-align    : center;
-        gap: 8rem;
+        gap           : 8rem;
     }
 
     .metod-text-content h3 {
         font-size     : 3.5rem;
         padding-bottom: 2rem;
     }
+
     .metod-video {
-        width: auto;
+        width : auto;
         height: auto;
     }
 
@@ -591,15 +642,22 @@ ul.depoim-content,
     .contact-content {
         display              : grid;
         grid-template-columns: 1fr;
-        gap: 5rem;
-        padding-top: 10rem;
-        margin-top: -30rem;
-        padding-bottom: 3rem;
-        text-align: center;
-       
+        gap                  : 5rem;
+        padding-top          : 10rem;
+        margin-top           : -30rem;
+        padding-bottom       : 3rem;
+        text-align           : center;
+
     }
-    .contact-content h4{
+
+    .contact-content h4 {
         font-size: 3.5rem;
+    }
+    .rodape{
+        margin-top: 0rem;
+    }
+    .rodape-content{
+        text-align: center;
     }
 
 }
