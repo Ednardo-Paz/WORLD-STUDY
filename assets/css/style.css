@@ -11,9 +11,10 @@
     padding   : 0;
     list-style: none;
     box-sizing: border-box;
-   
+
 }
-a{
+
+a {
     color: white;
 }
 
@@ -208,13 +209,13 @@ body .full-width {
 
 /* Section Metod*/
 
-.metod-content{
+.metod-content {
     display        : flex;
     flex-direction : row;
     justify-content: space-around;
     min-height     : auto;
     padding-bottom : 5rem;
-   
+
 }
 
 
@@ -222,7 +223,7 @@ body .full-width {
     width        : 100%;
     display      : block;
     border-radius: 1rem;
-    
+
 }
 
 
@@ -273,15 +274,17 @@ ul.window-content,
     gap            : 1rem;
     flex-wrap      : wrap;
 }
+
 @keyframes move {
     0% {
         top: 0px
     }
 
     100% {
-        top: -110px
+        top: -140px
     }
 }
+
 ul.window-content,
 .box1 li {
     position           : relative;
@@ -289,7 +292,7 @@ ul.window-content,
     animation-duration : 2s;
     animation-fill-mode: forwards;
     height             : 25rem;
-    background-color   : #f63fed;
+    background-color   : #f63fedc7;
     border-radius      : 1.5rem;
     padding            : 2rem;
 }
@@ -310,13 +313,14 @@ ul.window-content,
 ul.window-content,
 .box1 p {
     font-size  : 1.5rem;
-    color      : white;
-    padding-top: 3rem;
+    color      : #010138;
+    padding-top: 2.5rem;
+    font-weight: bold;
 }
 
 ul.window-content,
 .box1 img {
-    border       : 0.2rem solid white;
+    border       : 0.2rem solid #010138;
     border-radius: 50%;
     padding      : 0.8rem;
 
@@ -375,8 +379,8 @@ ul.window-content,
 }
 
 /* Section depoimento*/
-.depoimento{
-    background-color: #7a9ed483;
+.depoimento {
+    background-color: white;
 }
 
 .depoim-content h3 {
@@ -405,9 +409,10 @@ ul.depoim-content,
     display         : flex;
     height          : auto;
     width           : 100%;
-    background-color: #6d673281;
+    background-color: white;
+    border          : 3px solid #f63fed;
     border-radius   : 1rem;
-    color           : white;
+    color           : #f63fed;
     padding         : 2rem;
     flex-wrap       : wrap;
 }
@@ -422,12 +427,13 @@ ul.depoim-content,
 .box li p {
     font-size  : 1.6rem;
     padding-top: 1.5rem;
+    color      : rgb(0, 0, 47);
 }
 
 ul.depoim-content,
 .box li img {
-    background-color: wheat;
-    border          : 3px solid white;
+    background-color: rgb(246, 176, 225);
+    border          : 3px solid #f63fed;
     border-radius   : 50%;
     padding         : 1.5rem;
     position        : relative;
@@ -512,35 +518,41 @@ ul.depoim-content,
 .form-group ::placeholder {
     opacity: .4;
 }
+
 /*Footer rodape*/
 
-.rodape-content{
-    display: flex;
-    width: 100%;
-    flex-wrap: wrap;
+.rodape-content {
+    display        : flex;
+    width          : 100%;
+    flex-wrap      : wrap;
     justify-content: space-around;
-    align-items: center;
-    padding-top: 6.5rem;
-    padding-bottom: 6.5rem;
-    gap: 3rem;
+    align-items    : center;
+    padding-top    : 6.5rem;
+    padding-bottom : 6.5rem;
+    gap            : 3rem;
 }
-.rodape p{
+
+.rodape p {
     font-size: 1.1rem;
-  
+
 }
 
-.icon-content, .icon{
+.icon-content,
+.icon {
     display: flex;
-    gap: 2rem;
-}
- .icon{
-    border: 2px solid white;
-    padding: .6rem;
-    border-radius:50%;
+    gap    : 2rem;
 }
 
+.icon {
+    border       : 2px solid white;
+    padding      : .6rem;
+    border-radius: 50%;
+}
 
 
+.close-menu{
+   display: none;
+}
 @media(max-width:1190px) {
     .contact {
         margin-top: 30rem;
@@ -561,7 +573,7 @@ ul.depoim-content,
     }
 
     .intro-text-content h1 {
-        font-size  : 3rem;
+        font-size  : 2rem;
         padding-top: 7rem;
         text-align : center;
     }
@@ -591,6 +603,16 @@ ul.depoim-content,
     ul.window-content,
     .box1 img {
         padding: 0;
+    }
+
+    @keyframes move {
+        0% {
+            top: 0px
+        }
+
+        100% {
+            top: -100px
+        }
     }
 
     .metod-content {
@@ -653,11 +675,76 @@ ul.depoim-content,
     .contact-content h4 {
         font-size: 3.5rem;
     }
-    .rodape{
+
+    .rodape {
         margin-top: 0rem;
     }
-    .rodape-content{
+
+    .rodape-content {
         text-align: center;
+    }
+
+    .menu {
+        position: fixed;
+        top     : 0;
+        right   : 0;
+        left    : 0;
+        bottom  : 0;
+        text-align: center;
+    }
+
+    .menu-content,
+    .menu ul {
+        display       : flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .menu-content {
+        height: 100vh;
+    }
+    .menu{
+        display: none;
+    }
+ 
+    .close-menu-label::after{
+        content: '≡';
+        position: fixed;
+        z-index: 3;
+        top: 2rem;
+        right: 2rem;
+        background: #f63fed ;
+        color: white;
+        font-size: 3rem;
+        line-height: 3rem;
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        padding: 0.5rem;
+        cursor: pointer;
+    }
+    .close-menu:checked~.menu{
+        display: block;
+    }
+    .close-menu:checked~.close-menu-label::after{
+        content: 'X';
+    }
+    .menu-space{
+        display: none;
+    }
+    .back-to-top{
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        background-color: white;
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 47);
+        border-radius: 50%;
+        border: 2px solid #f63fed;
     }
 
 }

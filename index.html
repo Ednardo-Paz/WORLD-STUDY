@@ -16,15 +16,19 @@
 </head>
 
 <body>
+    <input type="checkbox" aria-label="close menu" role="button"class="close-menu" id="close-menu">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+
+
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1>
-                <a href="#"><img class="logo" src="/assets/img/worldstudy-logo-purple.png" width="170" alt=""></a>
+            <h1 onclick="getElementById('close-menu').checked = false">
+                <a href="#home"><img class="logo" src="/assets/img/worldstudy-logo-purple.png" width="170" alt=""></a>
             </h1>
 
 
             <nav>
-                <ul>
+                <ul onclick="getElementById('close-menu').checked = false">
                     <li><a href="#difer">Diferenciais</a></li>
                     <li><a href="#metod">Metodologia</a></li>
                     <li><a href="#galeria">Galeria</a></li>
@@ -40,7 +44,7 @@
     <section id="inicio" class="intro main-bg ">
         <div class="main-content intro-content">
             <div class="intro-text-content">
-                <h1>Aprenda inglês 100% Real, com a escola disponível.</h1>
+                <h1> World study on line. Aprenda inglês 100% Real, 100% digital.</h1>
                 <p id="difer">Estude ingês no seu rítimo e de onde estiver.
                 </p>
                 <p>
@@ -65,29 +69,41 @@
 
         <div id="difer" class="window-content main-content">
             <ul class="box1">
-                <li class="item"><img src="/assets/img/2x/2x/round_play_arrow_white_24dp.png" alt="">
+                <li class="item"><img src="/assets/img/play-white.svg" width="60" alt="">
                     <h6> Multiplataforma </h6>
                     <p>Acesse o curso online em qualquer dispositivo;</p>
 
                 </li>
-                <li class="item"><img src="/assets/img/2x/2x/round_play_arrow_white_24dp.png" alt="">
-                    <h6> Multiplataforma </h6>
-                    <p>Acesse o curso online em qualquer dispositivo;</p>
+                <li class="item"><img src="/assets/img/clapperboard.svg" width="60" alt="">
+                    <h6>Documentários
+                       </h6>
+                    <p>Assista a
+                        documentários
+                        originais produzidos
+                        nos E.U.A;</p>
 
                 </li>
-                <li class="item"><img src="/assets/img/2x/2x/round_play_arrow_white_24dp.png" alt="">
-                    <h6> Multiplataforma </h6>
-                    <p>Acesse o curso online em qualquer dispositivo;</p>
+                <li class="item"><img src="/assets/img/theaters_white_24dp.svg" width="60" alt="">
+                    <h6>+ de 400 vídeos </h6>
+                    <p>Aulas de gramática e
+                        vocabulário e + de
+                        4.000 exercícios;</p>
 
                 </li>
-                <li class="item"><img src="/assets/img/2x/2x/round_play_arrow_white_24dp.png" alt="">
-                    <h6> Multiplataforma </h6>
-                    <p>Acesse o curso online em qualquer dispositivo;</p>
+                <li class="item"><img src="/assets/img/certificado.png" width="60" alt="">
+                    <h6> Certificado </h6>
+                    <p>Receba seu
+                        certificado de acordo
+                        com suas horas de
+                        estudo;</p>
 
                 </li>
-                <li class="item"><img src="/assets/img/2x/2x/round_play_arrow_white_24dp.png" alt="">
-                    <h6> Multiplataforma </h6>
-                    <p>Acesse o curso online em qualquer dispositivo;</p>
+                <li class="item"><img src="/assets/img//flag_white.svg" width="60" alt="">
+                    <h6> Professores
+                        nativos </h6>
+                    <p>Estude com situações
+                        reais e professores
+                        nativos da língua inglesa;</p>
 
                 </li>
             </ul>
@@ -107,7 +123,7 @@
                 </div>
                 <div class="controle">
                     <button class="play-btn" onclick="play()" src="/assets/img/play.png" alt=""><img id="poster"
-                            src="/assets/img/play.png" alt="">
+                            src="/assets/img/play-pink.png" alt="">
                     </button>
                 </div>
 
@@ -126,34 +142,31 @@
 
             <div class="grid-img">
                 <div class="gallery-img">
-                    <img id="img-1" src="https://source.unsplash.com/random/300x300?r=1"
-                        alt="radom image from unsplash">
+                    <img id="img-1" src="/assets/img/foto-rs.jpg" alt="radom image from unsplash">
                 </div>
 
 
                 <div class="gallery-img">
-                    <img id="img-1" src="https://source.unsplash.com/random/360x360?r=2"
-                        alt="radom image from unsplash">
+                    <img id="img-1" src="/assets/img/foto-rs2.jpg" alt="radom image from unsplash">
                 </div>
 
                 <div class="gallery-img">
-                    <img id="img-1" src="https://source.unsplash.com/random/360x360?r=3"
-                        alt="radom image from unsplash">
+                    <img id="img-1" src="/assets/img/foto-rs3.jpg" alt="radom image from unsplash">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=4" alt="radom image from unsplash">
+                    <img src="/assets/img/foto-rs4.jpg" alt="">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=5" alt="radom image from unsplash">
+                    <img src="/assets/img/foto-rs5.jpg" alt="radom image from unsplash">
                 </div>
                 <div class="gallery-img">
-                    <img src="https://source.unsplash.com/random/360x360?r=6" alt="radom image from unsplash">
+                    <img src="/assets/img/foto-rs1.jpg" alt="radom image from unsplash">
                 </div>
             </div>
 
             <div class="grid-text-content">
                 <h4> Para quem o curso é desenvolvido?</h4>
-                <p> O método Wise Up Online é para todos os níveis, sendo aconselhado para quem deseja desenvolver ou
+                <p> O método world Study é para todos os níveis, sendo aconselhado para quem deseja desenvolver ou
                     aprimorar o inglês. As aulas completamente digitais ensinam de forma intuitiva, atendendo pessoas
                     que nunca tiveram contato com a língua
                     e auxiliando quem já está em níveis mais avançados. O melhor de tudo isso é que o conteúdo está
@@ -173,35 +186,34 @@
             <h3>Depoimentos</h3>
             <ul class="box">
                 <li>
-                    <div class="item1"><img src="img/2x/person.png">
+                    <div class="item1"><img src="/assets/img/aspas=pink.png" width="85">
                         <h6>Stefani</h6>
-                        <p>“Estudar na English Live é uma experiência incrível. Disciplina e foco são essenciais para o
+                        <p>“Estudar na World Study é uma experiência incrível. Disciplina e foco são essenciais para o
                             aprendizado, aliados à metodologia proposta das gramáticas, que são preparadas para praticar
                             o listening.”</p>
 
                 </li>
                 <li>
-                    <div class="item1"><img src="img/2x/person.png">
-                        <h6>Stefani</h6>
-                        <p>“Estudar na English Live é uma experiência incrível. Disciplina e foco são essenciais para o
+                    <div class="item1"><img src="/assets/img/aspas=pink.png" width="85">
+                        <h6>Henrique Carvalho de
+                            Araújo</h6>
+                        <p>Recomendo pela qualidade das aulas e conteúdo rico que facilita o aprendizado. Sempre tive dificuldade com a língua, mas com esse curso estou evoluindo.</p>
+
+                </li>
+                <li>
+                    <div class="item1"><img src="/assets/img/aspas=pink.png" width="85">
+                        <h6>Estefânia
+                            Queiroz</h6>
+                        <p>“Estudar na World Study é uma experiência incrível. Disciplina e foco são essenciais para o
                             aprendizado, aliados à metodologia proposta das gramáticas, que são preparadas para praticar
                             o listening.”</p>
 
                 </li>
                 <li>
-                    <div class="item1"><img src="img/2x/person.png">
-                        <h6>Stefani</h6>
-                        <p>“Estudar na English Live é uma experiência incrível. Disciplina e foco são essenciais para o
-                            aprendizado, aliados à metodologia proposta das gramáticas, que são preparadas para praticar
-                            o listening.”</p>
-
-                </li>
-                <li>
-                    <div class="item1"><img src="img/2x/person.png">
-                        <h6>Stefani</h6>
-                        <p>“Estudar na English Live é uma experiência incrível. Disciplina e foco são essenciais para o
-                            aprendizado, aliados à metodologia proposta das gramáticas, que são preparadas para praticar
-                            o listening.”</p>
+                    <div class="item1"><img src="/assets/img/aspas=pink.png" width="85">
+                        <h6>Paulo Geovani
+                            Batista</h6>
+                        <p>Abordagem do curso é bem dinâmico, de fácil entendimento. O World Study Online aborda situações do cotidiano, assim fica mais fácil a compreensão.</p>
 
                 </li>
             </ul>
@@ -217,7 +229,7 @@
                 <h4>Conquiste a
                     Fluência em Inglês em 8 meses.</h4>
 
-                <p> A EAC Personnalité oferece Cursos de inglês em Imersão com aulas diárias obrigatórias em um rigoroso
+                <p> O World Study oferece Cursos de inglês em Imersão com aulas diárias obrigatórias em um rigoroso
                     sistema de ensino baseado em um método exclusivo.</p>
             </div>
 
@@ -266,18 +278,19 @@
             </div>
 
             <div class="icon-content">
-                <div >
-                   <a href=""> <img  class="icon"src="/assets/img/youtube (1).svg" alt=""></a>
+                <div>
+                    <a href=""> <img class="icon" src="/assets/img/youtube (1).svg" alt=""></a>
                 </div>
-                <div >
-                   <a href=""> <img class="icon"src="/assets/img/facebook.svg" alt=""></a>
+                <div>
+                    <a href=""> <img class="icon" src="/assets/img/facebook.svg" alt=""></a>
                 </div>
-                <div >
-                   <a href=""> <img class="icon"src="/assets/img/instagram.svg" alt=""></a>
+                <div>
+                    <a href=""> <img class="icon" src="/assets/img/instagram.svg" alt=""></a>
                 </div>
             </div>
         </div>
     </footer>
+    <a class="back-to-top" id="#difer" href="">Top</a>
 
 
 
