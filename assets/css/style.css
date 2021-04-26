@@ -415,6 +415,7 @@ ul.depoim-content,
     color           : #f63fed;
     padding         : 2rem;
     flex-wrap       : wrap;
+
 }
 
 ul.depoim-content,
@@ -550,9 +551,10 @@ ul.depoim-content,
 }
 
 
-.close-menu{
-   display: none;
+.close-menu {
+    display: none;
 }
+
 @media(max-width:1190px) {
     .contact {
         margin-top: 30rem;
@@ -656,9 +658,9 @@ ul.depoim-content,
         text-align  : center;
     }
 
-    .depoimento.white-bg-novo {
-        display: none;
-
+    ul.depoim-content,
+    .box {
+        gap: 5rem;
     }
 
     .contact-content {
@@ -685,66 +687,71 @@ ul.depoim-content,
     }
 
     .menu {
-        position: fixed;
-        top     : 0;
-        right   : 0;
-        left    : 0;
-        bottom  : 0;
+        position  : fixed;
+        top       : 0;
+        right     : 0;
+        left      : 0;
+        bottom    : 0;
         text-align: center;
     }
 
     .menu-content,
     .menu ul {
-        display       : flex;
-        flex-direction: column;
+        display        : flex;
+        flex-direction : column;
         justify-content: center;
     }
 
     .menu-content {
         height: 100vh;
     }
-    .menu{
+
+    .menu {
         display: none;
     }
- 
-    .close-menu-label::after{
-        content: '≡';
-        position: fixed;
-        z-index: 3;
-        top: 2rem;
-        right: 2rem;
-        background: #f63fed ;
-        color: white;
-        font-size: 3rem;
+
+    .close-menu-label::after {
+        content    : '≡';
+        position   : fixed;
+        z-index    : 3;
+        top        : 2rem;
+        right      : 2rem;
+        background : #f63fed;
+        color      : white;
+        font-size  : 3rem;
         line-height: 3rem;
-        width: 3rem;
-        height: 3rem;
-        text-align: center;
-        padding: 0.5rem;
-        cursor: pointer;
+        width      : 3rem;
+        height     : 3rem;
+        text-align : center;
+        padding    : 0.5rem;
+        cursor     : pointer;
     }
-    .close-menu:checked~.menu{
+
+    .close-menu:checked~.menu {
         display: block;
     }
-    .close-menu:checked~.close-menu-label::after{
+
+    .close-menu:checked~.close-menu-label::after {
         content: 'X';
     }
-    .menu-space{
+
+    .menu-space {
         display: none;
     }
-    .back-to-top{
-        position: fixed;
-        bottom: 2rem;
-        right: 2rem;
+
+    .back-to-top {
+        position        : fixed;
+        bottom          : 2rem;
+        right           : 2rem;
         background-color: white;
-        width: 5rem;
-        height: 5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(0, 0, 47);
-        border-radius: 50%;
-        border: 2px solid #f63fed;
+        width           : 5rem;
+        height          : 5rem;
+        display         : flex;
+        justify-content : center;
+        align-items     : center;
+        color           : rgb(0, 0, 47);
+        border-radius   : 50%;
+        border          : 2px solid #f63fed;
     }
 
 }
